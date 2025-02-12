@@ -62,7 +62,7 @@ go build -o kryptos
 
 This will create an executable file named `kryptos` (or `kryptos.exe` on Windows) in your project directory.
 
-**2. Download Pre-built Binaries
+**2. Download Pre-built Binaries**
 
 You can download pre-built binaries for your operating system from the [Releases]([https://github.com]) page. Choose the appropriate binary for your platform and follow your operating system's instructions for running executables.
 
