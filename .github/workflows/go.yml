@@ -21,10 +21,21 @@ jobs:
       with:
         go-version: '1.20'
 
-    - name: Install system dependencies
+    - name: Install system dependencies - Comprehensive
       run: |
         sudo apt-get update
-        sudo apt-get install -y libgl-dev libx11-dev libxcursor-dev libxrandr-dev
+        sudo apt-get install -y \
+          libgl-dev \
+          libx11-dev \
+          libxcursor-dev \
+          libxrandr-dev \
+          libxinerama-dev \
+          libxi-dev \
+          libxxf86vm-dev \
+          libxinerama-dev \
+          libxft-dev \
+          mesa-common-dev \
+          libglu1-mesa-dev
 
     - name: Build
       run: go build -v ./...
