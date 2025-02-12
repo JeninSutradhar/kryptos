@@ -37,6 +37,10 @@ jobs:
           mesa-common-dev \
           libglu1-mesa-dev
 
+    - name: Set PKG_CONFIG_PATH
+      run: |
+        echo "PKG_CONFIG_PATH=/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib64/pkgconfig:$PKG_CONFIG_PATH" >> $GITHUB_ENV
+
     - name: Build
       run: go build -v ./...
 
