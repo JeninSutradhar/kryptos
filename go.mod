@@ -1,6 +1,6 @@
 module kryptos
 
-go 1.23.4
+go 1.23
 
 require (
 	fyne.io/fyne/v2 v2.3.5
