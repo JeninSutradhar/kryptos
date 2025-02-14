@@ -46,7 +46,10 @@ func GenerateSalt() ([]byte, error) {
 	return salt, nil
 }
 
-// EncryptData encrypts data using AES-256-GCM.
+// EncryptData encrypts data using AES-256-GCM (Authenticated Encryption with Associated Data).
+// It takes the plaintext data and a 32-byte encryption key as inputs, generates a random nonce,
+// encrypts the data, and returns the base64-encoded ciphertext. The function returns an error
+// if any step of the encryption process fails.
 func EncryptData(data []byte, key []byte) (string, error) {
 	block, err := aes.NewCipher(key)
 	if err != nil {
