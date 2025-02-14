@@ -7,7 +7,7 @@
 package crypto
 
 import (
-	"crypto/aes"
+	"crypto/aes" 
 	"crypto/cipher"
 	"crypto/rand"
 	"encoding/base64"
@@ -17,10 +17,10 @@ import (
 )
 
 const (
-	scryptN       = 16384
-	scryptR       = 8
-	scryptP       = 1
-	scryptSaltLen = 16 // Length of the salt in bytes
+	scryptN       = 16384  // scrypt parameter N (controls the cost of the key derivation)
+	scryptR       = 8      // scrypt parameter R (controls memory usage)
+	scryptP       = 1      // scrypt parameter P (parallelization factor)
+	scryptSaltLen = 16     // Length of the salt in bytes (random value used in key derivation)
 )
 
 // DeriveKeyFromPassword derives an encryption key from a master password using scrypt.
