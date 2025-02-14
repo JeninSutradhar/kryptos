@@ -1,3 +1,6 @@
+// Package crypto provides cryptographic utilities for secure data encryption and decryption.
+
+
 package crypto
 
 import (
