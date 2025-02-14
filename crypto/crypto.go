@@ -68,6 +68,9 @@ func EncryptData(data []byte, key []byte) (string, error) {
 }
 
 // DecryptData decrypts data encrypted with AES-256-GCM.
+// It takes the base64-encoded ciphertext and a 32-byte encryption key as inputs,
+// extracts the nonce, decrypts the data, and returns the plaintext. The function
+// returns an error if any step of the decryption process fails.
 func DecryptData(encryptedData string, key []byte) ([]byte, error) {
 	ciphertext, err := base64.StdEncoding.DecodeString(encryptedData)
 	if err != nil {
