@@ -1,5 +1,8 @@
-// Package crypto provides cryptographic utilities for secure data encryption and decryption.
-
+/// Package crypto provides cryptographic utilities for secure data encryption and decryption.
+// This package offers functions to:
+// - Derive encryption keys from passwords using the scrypt key derivation function.
+// - Generate random salts for use in key derivation.
+// - Encrypt and decrypt data using AES-256-GCM (Authenticated Encryption with Associated Data).
 
 package crypto
 
