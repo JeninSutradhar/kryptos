@@ -24,6 +24,9 @@ const (
 )
 
 // DeriveKeyFromPassword derives an encryption key from a master password using scrypt.
+// It takes a master password and a salt as inputs and returns a 32-byte encryption key
+// suitable for use with AES-256 encryption. The function returns an error if the key
+// derivation fails.
 func DeriveKeyFromPassword(masterPassword string, salt []byte) ([]byte, error) {
 	dk, err := scrypt.Key([]byte(masterPassword), salt, scryptN, scryptR, scryptP, 32) // 32-byte key for AES-256
 	if err != nil {
