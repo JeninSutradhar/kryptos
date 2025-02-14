@@ -10,12 +10,12 @@ https://github.com/user-attachments/assets/d3eb73ad-f900-4e99-9556-d6feeab2529d
 
 
 
-**Kryptos** is a modern, cross-platform password manager built with Go and Fyne, designed to provide a secure and intuitive way to store and manage your passwords locally.  We prioritize security and user experience, ensuring your sensitive data is protected while remaining easily accessible.
+**Kryptos** is a modern, cross-platform password manager built with Go and Fyne, designed to provide a secure and intuitive way to store and manage your passwords locally. For prioritized security and user experience, ensuring your sensitive data is protected while remaining easily accessible. 
 
 ## Features
 
 ### 🛡️ Security
-- AES-256-GCM encryption for all stored data
+- AES-GCM-256 encryption for all stored data
 - Scrypt key derivation for master passwords
 - Secure random salt generation for each save
 - Zero-knowledge architecture - all encryption/decryption happens locally
