@@ -35,7 +35,8 @@ func DeriveKeyFromPassword(masterPassword string, salt []byte) ([]byte, error) {
 	return dk, nil
 }
 
-// GenerateSalt generates a random salt.
+// GenerateSalt generates a random salt of 16 bytes.
+// It returns the generated salt and an error if the random data generation fails.
 func GenerateSalt() ([]byte, error) {
 	salt := make([]byte, scryptSaltLen)
 	_, err := rand.Read(salt)
