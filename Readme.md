@@ -66,6 +66,13 @@ This will create an executable file named `kryptos` (or `kryptos.exe` on Windows
 
 You can download pre-built binaries for your operating system from the [Releases]([https://github.com]) page. Choose the appropriate binary for your platform and follow your operating system's instructions for running executables.
 
+## Screenshots
+![Screenshot_20250212_230356](https://github.com/user-attachments/assets/a66a9581-a04e-4ec1-8992-c32e56e660a3)
+
+![asdasdasd](https://github.com/user-attachments/assets/f598d001-e936-429f-9247-b1f0a9246b73)
+![login](https://github.com/user-attachments/assets/7ef5a8bb-6894-4694-8deb-7c6828f39a66)
+![master](https://github.com/user-attachments/assets/60647568-8075-4f1c-bc02-2d5f45a3b709)
+
 ## Contributing
 
 We welcome contributions to Kryptos! If you'd like to contribute, please:
